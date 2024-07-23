@@ -1,0 +1,935 @@
+@media (min-width: 1024px) {
+    html {
+        overflow-x: visible;
+        
+    }
+
+body{
+    overflow-x: hidden;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    grid-column: 1 / -1; 
+    grid-row: 1;
+    background: rgba(17, 24, 39, 0.20);
+    backdrop-filter: blur(4px);
+    height: 78.5rem;
+}
+
+.fade {
+    grid-column: 1 / -1; 
+    grid-row: 1;
+    z-index: 4;
+    overflow: hidden;
+    width: 100%;
+    height: 79rem;
+}
+
+.moreno {
+    z-index: 2;
+    grid-column: 10; 
+    grid-row: 1;
+    width: 50.8rem;
+    height: 74.8rem;
+    margin-top: 3.7rem;
+}
+
+.insta {
+    position: absolute;
+    top: 25rem; 
+    left: 77rem; 
+    border: none;
+    background: none;
+    padding: 0;
+    outline: none;
+    text-align: left; 
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+
+.text-overlay {
+    grid-row: 1;
+    z-index: 5;
+    margin-top: 8rem;
+    margin-left: 8.3rem;
+    grid-column: 1 / -1;
+    color: white;
+}
+
+
+h1 {
+    font-family: 'American Captain', sans-serif;
+    font-size: 8rem;
+    line-height: 110%;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    
+}
+
+.container p {
+    width: 52rem;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.8rem; 
+    letter-spacing: -0.4px;
+    margin-bottom: 4rem;
+
+}
+.insta img {
+    margin-right: .8rem;
+    width: 4rem;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.insta a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.insta p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: var(--neutral-300);
+    margin: 0;
+    margin-top: 0.2rem;
+}
+
+.transform{
+    background-color: var(--primary-500);
+    color: var(--generic-50) !important;
+    text-decoration: none;
+    width: 36.1rem;
+    height: 6.4rem;
+    border-radius: 0.5rem;
+    padding: 1.4rem 2rem;
+    margin-top: 2.4rem;
+    border: none;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--Generic-White, #FFF);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-500-main, #6366F1);
+    box-shadow: 0px 2px 6px 0px rgba(16, 24, 40, 0.06);
+ }
+
+
+  .consult {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(41rem, 1fr));
+    gap: 4.8rem;
+    padding: 6.4rem 7.2rem;
+    }
+
+    .stat-container{
+        background-color: var(--neutral-100);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: 21rem;
+        gap: 3.2rem;
+        padding: 6.4rem 7.2rem;
+        
+    }
+    
+    .stats{
+    display: flex;
+    background-color: var(--generic-50);
+    border: 1px solid var(--neutral-200);
+    width: 41rem;
+    height: 8.2rem;
+    align-items: center;
+    justify-items: center;
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+
+
+    }
+
+    .process{
+        background-color: var(--generic-50);
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); 
+        padding: 6.4rem 7.2rem;
+        border-radius: 0 0 2.4rem 2.4rem;
+   
+       
+    }
+    
+    .process h1{
+        margin-left: 1rem;
+        grid-column: 1 /span 2;
+        grid-row: 1;
+        font-size: 3.6rem;
+       
+    }
+    .process h5{
+        
+        font-size: 1.8rem;
+        font-family: 800;
+        margin-bottom: 1.6rem;
+        margin-left: 2rem;
+        
+    }
+    
+    .process p{
+        margin-left: 1rem;
+        grid-column: 1 /span 2;
+        grid-row: 1;
+        font-size: 1.6rem;
+        margin-bottom: 3.2rem;
+        color: var(--neutral-500);
+        margin-top: 9rem;
+       
+    }
+    
+    .process img{
+        margin-left: 1rem;
+        grid-column: 1;
+        grid-row: 1;
+        width: 52.8rem;
+        height: 57.6rem;
+        margin-bottom: 3.2rem;
+        object-fit: cover;
+        object-position: top;
+        border-radius: .8rem;
+        margin-top: 18rem;
+    
+    }
+    
+    .process-ol {
+        grid-column: 5 /span 9;
+        list-style-type: none; 
+        grid-row: 1;
+        margin-top: 3.9rem;
+     
+    }
+    .process-ol p{
+        margin-left: 2rem;
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+
+  
+
+    .process button{
+    height: 5.2rem;
+    border-radius: .8rem;
+    border: 1px solid var(--primary-500-main, #6366F1);
+    background: var(--primary-500-main, #6366F1);
+    box-shadow: 0px 2px 6px 0px rgba(16, 24, 40, 0.06);
+    display: flex;
+    padding: 1.4rem 2rem;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 30.4rem;
+    font-size: 1.6rem;
+    color: var(--Generic-White, #FFF);
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px; 
+    margin-left: 14rem;
+    margin-top: 7rem;
+    }
+
+/*PLANOS*/
+.planos {
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--neutral-50) !important;
+    padding: 3.2rem 1.6rem;
+    border-radius: 3.2rem 3.2rem 0 0;
+    justify-content: center;
+    box-sizing: border-box; 
+    width: 100vw;
+
+}
+
+.card-planos {
+    background-color: var(--neutral-50) !important;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row; 
+    margin-left: -2rem;
+    min-width: 100vw; 
+    gap: 3.2rem;
+    justify-content: center;
+   
+}
+ 
+
+.card-planos span{
+        font-size: 1.4rem;
+        color: var(--neutral-400);
+        position: absolute;
+        margin-top: 4rem;
+        margin-left: 8.7rem;
+       
+    }
+    .tri{
+        position: absolute;
+        left: 76rem;
+
+    }
+    .sem{
+        position: absolute;
+        left: 116rem;
+    }
+
+    .card-planos {
+        background-color: var(--generic-50);
+        border-radius: 1rem;
+        overflow: hidden;
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    
+    .feature-item {
+        display: flex;
+        align-items: center;
+        padding: .5rem;
+       
+       
+    }
+    
+    .feature-item img {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: .9rem;
+    
+    }
+    
+    .feature-item p {
+        margin:0 ;
+        text-align: left;
+        font-size: 1.6rem;
+        color: var(--neutral-700);
+        
+        
+    }
+    
+    .plan-button {
+        display: block;
+        background-color: var(--primary-50);
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        border: 1px solid var(--Primary-100, #E0E7FF);
+        background: var(--Primary-50, #EEF2FF);
+        box-shadow: 0px 2px 6px 0px rgba(16, 24, 40, 0.06);
+        text-decoration: none;
+        margin-top: 3.2rem;
+        
+    }
+    .plan-buttont {
+        
+        text-decoration: none;
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        border: 1px solid var(--primary-500-main, #6366F1);
+        background: var(--primary-500-main, #6366F1);
+        box-shadow: 0px 2px 6px 0px rgba(16, 24, 40, 0.06);
+        margin-top: 3.2rem;
+    }
+
+    .about {
+        position: relative;
+        margin-top: -10rem;
+    }
+    
+    .about .fotos {
+        position: relative;
+    }
+    
+    
+    
+    
+    .about .text {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 120%; 
+        box-sizing: border-box; 
+    }
+    
+    .about h3{
+        font-family: 'American Captain', sans-serif;
+        font-size: 4rem;
+        color: white;
+        line-height: 110%;
+        font-weight: 400;
+        left: 72%;
+        top: 5%;
+       
+    }
+    
+    .fotos p {
+      
+        margin-left: 10.2rem;
+        margin-top: 8rem;
+        padding: 20px; 
+        color: #E5E7EB;
+        font-size: 1.5rem;
+        line-height: var(--line-h6-mobile);
+        font-weight: 400;
+        left: 73%;
+        top: 5%;
+        
+    }
+    
+    .fotos .treinador {
+        content: url('/assets/treinador.png'); 
+        width: 100vw;
+        height: 85.8rem;
+        z-index: 1;
+    }
+    
+    
+    .text h4{
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: var(--line-h5-mobile);
+        color: var(--generic-50);
+        text-align: right;
+        margin-right: 1.5rem;
+      
+    }
+    .text h6{
+        font-size: 1.4rem;
+        line-height: var(--line-height-overline);
+        color: #A1A1AA;
+        margin-right: 1.5rem;
+        margin-top: -1.5rem;
+        margin-bottom: 1.6rem;
+        
+    }
+    .text p{
+        text-align: justify;
+        font-size: 1.6rem;
+        color: var(--neutral-400);
+        line-height: 2.4rem;
+        width: 70rem;
+    }
+    .instagram-logo{
+        display: flex;
+        margin-left: 52rem;
+        margin-top: 2.4rem;
+      
+    }
+   
+    
+.protocolos {
+    background-color: white;
+    border-radius: 3.2rem 3.2rem 0 0;
+    padding: 3.2rem 1.6rem;
+    text-align: center; 
+   
+}
+
+.protocolos h6 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-500);
+    margin-bottom: 1rem; 
+}
+
+.protocolos h5 {
+    margin-top: 3.2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-500);
+    text-align: center;
+}
+
+.protocolos h1 {
+    font-size: 3.6rem;
+    line-height: var(--line-heading-h2);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    margin-top: 1.2rem;
+}
+
+.protocolos p {
+    margin-top: -2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--neutral-500);
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-bottom: 4.8rem;
+}
+
+
+
+
+.card-protocol .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+.braco{
+    margin-left: -.8rem;
+}
+.costa{
+    margin-left: -2rem;
+}
+.peito {
+    margin-left: -.1rem;
+
+  
+}
+.ciclo p{
+    text-align: center;
+    width: 100rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    }
+    footer .logo{
+        width: 5rem;
+        height: 5.5rem;
+        position: absolute;
+        left: 10rem;
+    }
+    
+    footer .instagram{
+        position: absolute;
+        left: 120rem;
+    }
+    
+    }
+
+    @media (min-width: 1920px) {
+
+        .insta {
+            position: absolute;
+            top: 30rem; 
+            left: 120rem; 
+            border: none;
+        }
+
+        .bg {
+            background: rgba(17, 24, 39, 0.20);
+            backdrop-filter: blur(4px);
+            width: 90vw;
+            height: 82.4rem;
+            grid-column: 1/ span 10;
+            grid-row: 1;
+            margin-left: 14.5rem;
+        }
+        
+        .fade {
+            width: 100vw;
+            height: 82.4rem;
+            grid-column: 1 / span 10;
+            grid-row: 1;
+            z-index: 3;
+            overflow: hidden;
+        }
+        
+        .moreno {
+            z-index: 2;
+            grid-column: 6 / span 3; 
+            grid-row: 1;
+            width: 50.8rem;
+            height: 72.8rem;
+            margin-top: 9rem;
+            overflow: hidden;
+        }
+        
+  
+        .consult {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(1fr));
+            align-items: center;
+            justify-content: center;
+            margin-left: 16rem;
+    
+        }
+
+        .stat-container{
+            background-color: var(--neutral-100);
+            display: flex;
+            flex-direction: row;
+            height: 21rem;
+            padding: 6.4rem 7.2rem   ;
+            gap: 10rem;   
+        }
+        
+        .stats{
+    
+            display: flex;
+            background-color: var(--generic-50);
+            border: 1px solid var(--neutral-200);
+            height: 8.2rem;
+            align-items: center;
+            justify-items: center;
+            padding: 1.6rem;
+            border-radius: 0.8rem;
+            margin-bottom: 2rem;
+            width: 41rem;
+            margin-left: 8rem;
+            
+        }
+
+        .process-ol {
+            grid-column: 5 / span 6;
+            grid-row: 1;
+            margin-top: 4rem;
+            list-style-type: none; 
+            counter-reset: custom-counter; 
+            padding: 0;
+           
+        }
+        .process-ol p{
+            margin-left: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 4.2rem;
+            line-height: 24px;
+        }
+    
+       
+        .process .transform{
+        color: var(--Generic-White, #FFF);
+        text-align: center;
+        font-family: Inter;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.125rem; 
+        margin-top: 9.5rem;
+        }
+        
+        .tri{
+            position: absolute;
+            left: 98rem;
+        }
+        .sem{
+            position: absolute;
+            left: 139rem;
+        }
+
+
+        
+
+        .about {
+            position: relative;
+            background-color: black;
+            box-shadow: inset 0 0 100px rgb(28, 27, 27) 30%;
+        }
+        
+
+
+        .about .fotos {
+            position: relative;
+        }
+        
+        .about .text {
+            position: absolute;
+            top: 45%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            max-width: 150%; 
+            box-sizing: border-box; 
+        }
+          
+        .fotos .treinador {
+         
+            width: 95dvw;
+            height: 105.8rem;
+            z-index: 1;
+            margin-left: 4.3rem;
+           
+        }
+        
+
+        .protocolos{
+            display: flex;
+            flex-direction: column;
+        }
+        .card-protocol {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            padding: 0px 53px;;
+            margin-left: 10rem;
+           
+        }
+
+        .gluteo, .braco, .costa, .peito{
+            grid-row: 1;
+        }
+      
+        
+        .card-protocol .texto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            opacity: 0; 
+            transition: opacity 0.3s ease; 
+        }
+        
+        .ciclo{
+            grid-row: 5;
+            align-items: center;
+            justify-content: center;
+            left: 63rem;
+        }
+     
+       
+            footer .instagram{
+                position: absolute;
+                left: 150rem;
+            }
+            
+            }
+        
+@media (min-width: 2560px) {
+
+    .insta {
+        position: absolute;
+        top: 30rem; 
+        left: 145rem; 
+        border: none;
+    }
+
+    
+    
+    .moreno {
+        z-index: 2;
+        grid-column: 6 / span 3; 
+        grid-row: 1;
+        width: 50.8rem;
+        height: 72.8rem;
+        margin-top: 9rem;
+        overflow: hidden;
+    }
+
+    .text-overlay {
+        grid-row: 1;
+        z-index: 5;
+        margin-top: 8rem;
+        grid-column: 2 / -1;
+        margin-left: 20rem;
+      
+    }
+    .consult {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(1fr));
+        align-items: center;
+        justify-content: center;
+        margin-left: 32rem;
+
+    }
+
+    .stat-container{
+        background-color: var(--neutral-100);
+        display: flex;
+        flex-direction: row;
+        height: 21rem;
+        padding: 6.4rem 7.2rem   ;
+        gap: 20rem;   
+    }
+    
+    .stats{
+
+        display: flex;
+        background-color: var(--generic-50);
+        border: 1px solid var(--neutral-200);
+        height: 8.2rem;
+        align-items: center;
+        justify-items: center;
+        padding: 1.6rem;
+        border-radius: 0.8rem;
+        margin-bottom: 2rem;
+        width: 41rem;
+        margin-left: 18rem;
+        
+    }
+    .process h1, .process p, .process img{
+        margin-left: 32rem;
+    }
+.process p{
+    grid-column: 1 / span 1;
+}
+    .process-ol {
+        grid-column: 5 / span 5;
+        grid-row: 1;
+        margin-top: 4rem;
+        list-style-type: none; 
+         
+       
+       
+    }
+    .process-ol p{
+        margin-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 4.2rem;
+        line-height: 24px;
+    }
+
+   
+    .process .transform{
+    color: var(--Generic-White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.125rem; 
+    margin-top: 9.5rem;
+    }
+    
+    .tri{
+        position: absolute;
+        left: 128rem;
+    }
+    .sem{
+        position: absolute;
+        left: 169rem;
+    }
+
+    .depoimentos .carousel{
+        height: 70rem;
+        
+    
+    }
+    .about {
+        position: relative;
+        background-color: black;
+        box-shadow: inset 0 0 100px rgb(28, 27, 27) 30%;
+    }
+    
+    .about .fotos {
+        position: relative;
+    }
+    
+    .about .text {
+        position: absolute;
+        top: 45%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 150%; 
+        box-sizing: border-box; 
+    }
+      
+    .fotos .treinador {
+     
+        width: 90dvw;
+        height: 105.8rem;
+        z-index: 1;
+        margin-left: 10rem;
+       
+    }
+    
+
+    .protocolos{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-protocol {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        padding: 0px 53px;;
+        margin-left: 20rem;
+       
+    }
+
+    .gluteo, .braco, .costa, .peito{
+        grid-row: 1;
+    }
+  
+    
+    .card-protocol .texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0; 
+        transition: opacity 0.3s ease; 
+    }
+    
+    .ciclo{
+        grid-row: 5;
+        align-items: center;
+        justify-content: center;
+        left: 85rem;
+    }
+ 
+   
+        footer .instagram{
+            position: absolute;
+            left: 220rem;
+        }
+        
+        }
+    
+
+
+
+  
+        
+
+        
+
+
+    
